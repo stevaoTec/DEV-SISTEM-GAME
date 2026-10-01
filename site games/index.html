@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Jogos | Dev Sistemas</title>
+    <!-- Google Fonts: Fontes de Pixel/Retro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Partículas Clean de Fundo -->
+    <div class="ambient-particles" id="ambientParticles"></div>
+
+    <!-- Tela de Entrada "Boot Sequence" (Criativa e Clean) -->
+    <div class="intro-screen" id="introScreen">
+        <!-- Detalhes nas bordas como telas de BIOS antigas -->
+        <div class="sys-text top-left">SYS_VER 2026.1</div>
+        <div class="sys-text top-right">MEM: 640K OK</div>
+
+        <div class="boot-logo-container">
+            <h1 class="boot-logo">DEV<br>SYSTEMS</h1>
+            <div class="pixel-progress-bar">
+                <div class="pixel-progress-fill" id="progressFill"></div>
+            </div>
+            <p class="boot-status" id="bootStatus">INITIALIZING...</p>
+        </div>
+
+        <div class="sys-text bottom-left">SENAC&reg; ENTERTAINMENT SYSTEM</div>
+        <div class="sys-text bottom-right blink-text">PLEASE WAIT_</div>
+    </div>
+
+    <!-- Marquee e Light Switch -->
+    <div class="top-system-bar" id="topSystemBar">
+        <div class="marquee-container">
+            <div class="marquee-text">
+                *** BEM VINDOS AO ARCADE DA TURMA DEV. SISTEMAS... INSIRA UMA FICHA PARA JOGAR! *** BEM VINDOS AO ARCADE
+                DA TURMA DEV. SISTEMAS... INSIRA UMA FICHA PARA JOGAR! ***
+            </div>
+        </div>
+        <button id="themeToggle" class="theme-toggle-btn" title="Ligar/Desligar Fliperama">
+            <i class="fa-solid fa-lightbulb"></i>
+        </button>
+    </div>
+
+    <!-- Container Principal -->
+    <main class="container" id="mainContent">
+        <!-- Cabeçalho Clean Retro -->
+        <header class="clean-header">
+            <div class="pixel-badge">
+                <i class="fa-solid fa-code" style="color: #339af0; margin-right: 8px;"></i>
+                TURMA DEV. SISTEMAS
+            </div>
+            <h1 class="title">PORTAL DE JOGOS</h1>
+            <p class="subtitle">Descubra e divirta-se com as criações exclusivas dos futuros programadores do Senac!</p>
+        </header>
+
+        <!-- Grid de Jogos (Gerado via JS) -->
+        <div class="games-grid" id="gamesGrid">
+            <!-- Cards injetados aqui -->
+        </div>
+    </main>
+
+    <!-- Footer Diferente e Legal -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>CURSO DE DESENVOLVIMENTO DE SISTEMAS</h2>
+            </div>
+            <div class="footer-text">
+                <p>Nós construímos o futuro, linha por linha.</p>
+                <div class="highlight-box">
+                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                    <p>A MELHOR TURMA DO SENAC!</p>
+                    <span class="star-icon"><i class="fa-solid fa-star"></i></span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Portal de Jogos - Game Over</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Customizados -->
+    <script src="script.js"></script>
+</body>
+
+</html>
